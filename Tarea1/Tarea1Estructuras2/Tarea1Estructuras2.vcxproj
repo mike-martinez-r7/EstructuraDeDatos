@@ -139,19 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cola.cpp" />
-    <ClCompile Include="Gestor.cpp" />
-    <ClCompile Include="Lista.cpp" />
-    <ClCompile Include="Nodo.cpp" />
-    <ClCompile Include="Pila.cpp" />
+    <ClCompile Include="List.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Stack.cpp" />
     <ClCompile Include="Tarea1Estructuras2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cola.h" />
-    <ClInclude Include="Gestor.h" />
-    <ClInclude Include="Lista.h" />
-    <ClInclude Include="Nodo.h" />
-    <ClInclude Include="Pila.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Collection.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

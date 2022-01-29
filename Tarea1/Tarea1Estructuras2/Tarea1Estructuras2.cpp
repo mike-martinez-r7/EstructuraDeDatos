@@ -1,20 +1,49 @@
-// Tarea1Estructuras2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "Queue.h"
+#include "Stack.h"
+#include "List.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Queue* myQueue = new Queue();
+    myQueue->push(1);
+    myQueue->push(2);
+    myQueue->push(3);
+    myQueue->push(4);
+
+    std::cout << "Queue = " << myQueue->toString() << "\n";
+    std::cout << "Pop (" << myQueue->pop() << ")\n";
+    std::cout << "Pop (" << myQueue->pop() << ")\n";
+    std::cout << "Pop (" << myQueue->pop() << ")\n";
+    std::cout << "Pop (" << myQueue->pop() << ")\n";
+    std::cout << "Pop (" << myQueue->pop() << ")\n";
+    std::cout << "Queue = " << myQueue->toString() << "\n";
+
+    Stack* myStack = new Stack();
+    myStack->push(1);
+    myStack->push(2);
+    myStack->push(3);
+    myStack->push(4);
+    myStack->push(5);
+
+    std::cout << "Stack = " << myStack->toString() << "\n";
+    std::cout << "Pop (" << myStack->pop() << ")\n";
+    std::cout << "Pop (" << myStack->pop() << ")\n";
+    std::cout << "Pop (" << myStack->pop() << ")\n";
+    std::cout << "Pop (" << myStack->pop() << ")\n";
+    std::cout << "Pop (" << myStack->pop() << ")\n";
+    std::cout << "Pop (" << myStack->pop() << ")\n";
+    std::cout << "Stack = " << myStack->toString() << "\n";
+
+    List* myList = new List();
+    myList->insert(1);
+    myList->insert(2);
+    myList->insert(3);
+    myList->insert(4);
+    myList->insert(5);
+    myList->insert(0, 0);
+    myList->insert(0, 3);
+    myList->insert(0, 5);
+    myList->insert(0, 17);
+    std::cout << "List = " << myList->toString() << "\n";
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
