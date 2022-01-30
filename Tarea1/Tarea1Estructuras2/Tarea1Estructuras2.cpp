@@ -46,4 +46,14 @@ int main()
     myList->insert(0, 5);
     myList->insert(0, 17);
     std::cout << "List = " << myList->toString() << "\n";
+    std::cout << "Delete at (0)" << "\n";
+    myList->remove(0);
+    std::cout << "List = " << myList->toString() << "\n";
+    std::cout << "Delete first" << "\n";
+    myList->remove(1);
+    std::cout << "List = " << myList->toString() << "\n";
+    std::cout << "Delete last " << "\n";
+    myList->remove(6);
+    std::cout << "List = " << myList->toString() << "\n";
+
 }

@@ -64,7 +64,34 @@ void List::insert(int value, int pos) {
 }
 
 void List::remove(int pos) {
+    Node* aux = this->first;
+
+    for (int i = 1; i <= pos; i++) {
+        aux = aux->getNext();
+    }
+
+    Node* prevAux = aux->getPrevious();
+    Node* nextAux = aux->getNext();
+
+    if (pos == 0) {
+        nextAux->setPrevious(NULL);
+        this->first = nextAux;
+    }
+
+    if (pos == 1)
+        this->first = prevAux;
     
+    if (pos >= 1 && pos < this->length-1) {
+        prevAux->setNext(aux->getNext());
+        
+        if (nextAux != NULL)
+            nextAux->setPrevious(prevAux);
+    }
+    
+    if (pos >= this->length - 1)
+        this->last = prevAux;
+
+    delete aux;
 }
 
 
