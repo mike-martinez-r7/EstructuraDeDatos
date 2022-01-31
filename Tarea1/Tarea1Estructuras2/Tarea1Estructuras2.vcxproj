@@ -140,17 +140,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="List.cpp" />
+    <ClCompile Include="ListService.cpp" />
+    <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="QueueService.cpp" />
     <ClCompile Include="Stack.cpp" />
-    <ClCompile Include="Tarea1Estructuras2.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StackService.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ListService.h" />
+    <ClInclude Include="Manager.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="Collection.h" />
+    <ClInclude Include="QueueService.h" />
     <ClInclude Include="Stack.h" />
+    <ClInclude Include="StackService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

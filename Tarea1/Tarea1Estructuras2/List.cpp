@@ -94,11 +94,9 @@ void List::remove(int pos) {
     delete aux;
 }
 
-
 int List::getLength() {
     return this->length;
 }
-
 
 std::string List::toString() {
     string value = "";

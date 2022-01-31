@@ -1,54 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
+    <Filter Include="Data">
+      <UniqueIdentifier>{a73a44b7-dfae-40a1-9086-b2a7d27c8a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
+    <Filter Include="Data\Headers">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Data\Implementations">
+      <UniqueIdentifier>{4765666f-eb16-4bc8-bcde-547e6816726e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Menu">
-      <UniqueIdentifier>{479bd241-9da5-404d-a4ef-13d3aadef6db}</UniqueIdentifier>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{922a7b81-d80e-43a2-9a48-449eaee13d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Services">
+      <UniqueIdentifier>{a5578fb0-1962-4112-a243-47866a4ab7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Services\Headers">
+      <UniqueIdentifier>{cdff571e-420a-4270-b131-cafdde763b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Services\Implementations">
+      <UniqueIdentifier>{7aeaa080-a7af-4bae-b392-9cffa8a6984a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Tarea1Estructuras2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Queue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Node.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Main.cpp">
+      <Filter>Presentation</Filter>
     </ClCompile>
     <ClCompile Include="List.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Data\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Data\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>Data\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>Data\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="ListService.cpp">
+      <Filter>Logic\Services\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueService.cpp">
+      <Filter>Logic\Services\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="StackService.cpp">
+      <Filter>Logic\Services\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager.cpp">
+      <Filter>Logic</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Collection.h">
-      <Filter>Header Files</Filter>
+      <Filter>Data\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Stack.h">
-      <Filter>Header Files</Filter>
+      <Filter>Data\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Queue.h">
-      <Filter>Header Files</Filter>
+      <Filter>Data\Headers</Filter>
     </ClInclude>
     <ClInclude Include="List.h">
-      <Filter>Header Files</Filter>
+      <Filter>Data\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Node.h">
-      <Filter>Header Files</Filter>
+      <Filter>Data\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ListService.h">
+      <Filter>Logic\Services\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueService.h">
+      <Filter>Logic\Services\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="StackService.h">
+      <Filter>Logic\Services\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>Logic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
