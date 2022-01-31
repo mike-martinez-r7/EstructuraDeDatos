@@ -6,7 +6,12 @@
 class Manager {
     public:
         Manager();
+        ListService* getList();
+        QueueService* getQueue();
+        StackService* getStack();
+    private: 
         ListService* list;
         QueueService* queue;
         StackService* stack;
+    
 };

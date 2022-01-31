@@ -31,7 +31,7 @@ void interaccionMenu() {
 void eleccionMenu(int _opcion) {
     switch (_opcion)     {
         case 1:
-            manager->queue->push(leerInt());
+            manager->getQueue()->push(leerInt());
             cout << "\nDato ingresado" << endl;
             break;
         case 2:
@@ -39,10 +39,10 @@ void eleccionMenu(int _opcion) {
         case 3:
             break;  
         case 4:
-            cout << "Queue = " << manager->queue->print() << endl;
+            cout << "Queue = " << manager->getQueue()->print() << endl;
             break;
         case 5:
-            manager->stack->push(leerInt());
+            manager->getStack()->push(leerInt());
             cout << "\nDato ingresado" << endl;
             break;
         case 6:
@@ -50,10 +50,10 @@ void eleccionMenu(int _opcion) {
         case 7:
             break;
         case 8:
-            cout << "Stack = " << manager->stack->print() << endl;
+            cout << "Stack = " << manager->getStack()->print() << endl;
             break;
         case 9:
-            manager->list->insert(leerInt());
+            manager->getList()->insert(leerInt());
             cout << "\nDato ingresado" << endl;
             break;
         case 10:
@@ -61,7 +61,7 @@ void eleccionMenu(int _opcion) {
         case 11:
             break;
         case 12:
-            cout << "List = " << manager->list->print() << endl;
+            cout << "List = " << manager->getList()->print() << endl;
             break;
         case 0:
             cout << "-Gracias por usar el sistema vuelva pronto-" << endl;
