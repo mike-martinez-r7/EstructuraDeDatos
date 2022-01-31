@@ -10,8 +10,8 @@ void StackService::push(int value) {
 }
 
 
-void StackService::pop() {
-	this->myStack->pop();
+int StackService::pop() {
+	return this->myStack->pop();
 }
 
 

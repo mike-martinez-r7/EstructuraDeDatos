@@ -5,7 +5,7 @@ class StackService {
 public:
 	StackService();
 	void push(int value);
-	void pop();
+	int pop();
 	int length();
 	std::string print();
 protected:

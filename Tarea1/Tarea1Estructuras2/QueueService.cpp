@@ -10,8 +10,8 @@ void QueueService::push(int value) {
 }
 
 
-void QueueService::pop() {
-    this->myQueue->pop();
+int QueueService::pop() {
+    return this->myQueue->pop();
 }
 
 

@@ -5,7 +5,7 @@ class QueueService {
 	public:
 		QueueService();
 		void push(int value);
-		void pop();
+		int pop();
 		int length();
 		std::string print();
 	private:
