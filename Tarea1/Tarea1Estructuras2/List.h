@@ -8,6 +8,7 @@ class List : Collection {
         void insert(int value);
         void insert(int value, int pos);
         void remove(int pos);
+        int get(int pos);
         int getLength();
         std::string toString();
     protected:

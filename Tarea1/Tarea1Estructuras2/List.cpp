@@ -91,12 +91,26 @@ void List::remove(int pos) {
     if (pos >= this->length - 1)
         this->last = prevAux;
 
+    this->length--;
+
     delete aux;
 }
+
+int List::get(int pos) {
+    Node* aux = this->first;
+
+    for (int i = 1; i <= pos; i++) {
+        aux = aux->getNext();
+    }
+
+    return aux->getValue();
+}
+
 
 int List::getLength() {
     return this->length;
 }
+
 
 std::string List::toString() {
     string value = "";

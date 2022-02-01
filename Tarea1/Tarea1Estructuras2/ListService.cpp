@@ -19,6 +19,10 @@ void ListService::remove(int pos) {
     this->myList->remove(pos);
 }
 
+int ListService::get(int pos) {
+    return this->myList->get(pos);
+}
+
 
 int ListService::length() {
     return this->myList->getLength();
